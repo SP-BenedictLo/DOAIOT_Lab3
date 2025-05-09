@@ -3,6 +3,30 @@ print("Lab 3 - Software Unit Testing with PyTest")
 SORT_ASCENDING = 0
 SORT_DESCENDING = 1
 
+"""If < 10 numbers are entered and
+“SORT_ASCENDING” is passed to the
+function “bubble_sort()”, then the function
+returns the list of numbers sorted in ascending
+order.
+
+If < 10 numbers are entered and
+“SORT_DESCENDING” is passed to the
+function “bubble_sort()”, then the function
+returns the list of numbers sorted in descending
+order.
+
+If >= 10 numbers are entered, the function
+“bubble_sort()” shall return the integer value
+1
+
+If 0 numbers are entered, the function
+“bubble_sort()” shall return the integer value
+0
+
+If any of the values entered on the command
+line console are not integers, the function
+“bubble_sort()” shall return the integer value
+2"""
 
 def bubble_sort(arr, sorting_order):
 
