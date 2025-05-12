@@ -24,10 +24,11 @@ def calculate_average_salary():
 
 def get_employees_by_dept(department):
     result = []
-
-    # Add your implementation from here
-
-
+    for i in employee_data:
+        if i["department"] == department:
+            result.append(i)
+    if len(result) == 0:
+        print("\nNo employees found for the given department")
     return result
 
 def display_records(employee_info):
@@ -56,7 +57,7 @@ def display_main_menu():
 
         case '2':
             average_salary = calculate_average_salary()
-            print(f"Average salary = {average_salary}")
+            print(f"\nAverage salary = {average_salary}")
 
         case '3':
             age_lower_limit = input("age (Lower Limit) = ")
@@ -68,6 +69,9 @@ def display_main_menu():
             department = input("Name of Department = ")
             employee_info = get_employees_by_dept(department)
             display_records(employee_info)
+        
+        case 'Q':
+            quit()
 
         case _:
             quit()
