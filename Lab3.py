@@ -3,9 +3,6 @@ print("Lab 3 - Software Unit Testing with PyTest")
 SORT_ASCENDING = 0
 SORT_DESCENDING = 1
 
-SORT_ASCENDING = 0
-SORT_DESCENDING = 1
-
 def bubble_sort(arr, sorting_order):
     arr_result = arr.copy()
     n = len(arr_result)
