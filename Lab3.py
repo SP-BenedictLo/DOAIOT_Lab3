@@ -12,7 +12,7 @@ def bubble_sort(arr, sorting_order):
         return 0
     else:
         for i in arr_result:
-            if i != int(i):
+            if not isinstance(i, int):
                 return 2
     if n < 10:
         # Traverse through all array elements
