@@ -21,8 +21,8 @@ def test_calc_average():
 
 def test_calc_median_temperature_odd():
     result = 0.0
-    input_arr = [64.5, 34.4, 25.3, 12.2, 22.2, 11.0, 90.1]
-    test_ans = 12.2
+    input_arr = [64.5, 11.0, 12.2, 22.2, 25.3, 34.4, 90.1] #list should be sorted in the code.
+    test_ans = 25.3
 
     result = Lab2.calc_median_temperature(input_arr)
 
@@ -30,8 +30,8 @@ def test_calc_median_temperature_odd():
 
 def test_calc_median_temperature_even():
     result = 0.0
-    input_arr = [64.5, 34.4, 25.3, 22.2, 11.0, 90.1]
-    test_ans = 23.75
+    input_arr = [11.0, 22.2, 25.3, 34.4, 64.5, 90.1] 
+    test_ans = 29.85
 
     result = Lab2.calc_median_temperature(input_arr)
 
